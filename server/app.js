@@ -31,6 +31,7 @@ app.all('/*', function(req, res, next) {
   res.header('Access-Control-Allow-Methods', 'POST');
   // Set custom headers for CORS
   res.header('Access-Control-Allow-Headers', 'Content-type,Accept,X-Access-Token,X-Key');
+  next();
 });
 
 
